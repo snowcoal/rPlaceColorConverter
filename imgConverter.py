@@ -48,7 +48,7 @@ def findNearestPixel2(pixel, fpixelArray):
 
     idx = np.argmin(vals)
 
-    return [fpixelArray[np.argmin(vals)],idx]
+    return [fpixelArray[idx],idx]
 
 
 def main():

@@ -54,11 +54,18 @@ def findNearestPixel2(pixel, fpixelArray):
 def main():
     pixelArray,fPixelArray = generatePixelArray()
 
-    img = cv2.imread('inputs/input.png')
+    try:
+        img = cv2.imread('inputs/input.png')
+        cpy = img.copy()
+    except:
+        print("\n")
+        print("please name the input image \"input.png\" and place it into the inputs folder")
+        print("\n")
+        return
     labImg = convertToLABImg(img)
     
     h,w, chn = labImg.shape
-    cpy = img.copy()
+    
 
     pixels = [0]*24
 

@@ -9,3 +9,5 @@ findNearestPixel is deprecated and replaced with findNearestPixel2 but it can
 be used in case you want to do euclidean pixel distance
 
 code becomes VERY slow with large images
+
+CIEDE2000 code borrowed from: https://github.com/lovro-i/CIEDE2000
